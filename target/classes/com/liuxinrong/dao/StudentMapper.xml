@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liuxinrong.dao.StudentMapper">
+       <select id="selects" resultType="student">
+          select * from student
+       </select>
+       <select id="toadd" resultType="student">
+       select * from student
+       </select>
+       <insert id="add">
+         insert into student set name=#{name},sex=#{sex}
+       </insert>
+</mapper>
